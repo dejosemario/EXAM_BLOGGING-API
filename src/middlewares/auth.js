@@ -1,4 +1,4 @@
-import { verifyToken } from "../utils";
+import { verifyToken } from "../utils/index.js";
 
 export const isAuthenticated = async (req, res, next) => {
   try {
