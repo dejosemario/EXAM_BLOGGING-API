@@ -1,0 +1,30 @@
+{
+  "name": "exam_blogging-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mongodb-memory-server": "^9.1.8",
+    "mongoose": "^8.3.2",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.12.3",
+    "winston": "^3.13.0"
+  }
+}
