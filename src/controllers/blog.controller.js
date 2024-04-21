@@ -31,4 +31,13 @@ const updateBlog = async (req, res) => {
   }
 };
 
-export { createBlog, updateBlog };
+const deleteBlog = async (req, res) => {
+    const { id } = validate(paramIdSchema, req.params);
+    const data = await blogService.deleteBlog(id, req.user.id);
+    if (data) {
+      return res.status(204).json({});
+    }
+  };
+  
+
+export { createBlog, updateBlog, deleteBlog };

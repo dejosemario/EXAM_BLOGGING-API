@@ -26,8 +26,21 @@ const updateBlog = async (blogId, authorId, data) => {
     { $set: data },
     { new: true },
   ).populate("author");
-  if (!blog) throw new Error("Not Authorized to update blog");
+  if (!blog) throw new Error("You are not Authorized to update blog");
   return blog;
 };
 
-export { createBlog, updateBlog };
+const deleteBlog = async (blogId, authorId) => {
+    const blogExists = await Blog.findById(blogId);
+    if (!blogExists) throw new Error('Blog not found');
+  
+    const blog = await Blog.findOneAndDelete({
+      _id: blogId,
+      author: authorId,
+    }).populate('author');
+    if (!blog) throw new Error('You are not authorized to delete blog');
+  
+    return blog;
+  };
+
+export { createBlog, updateBlog, deleteBlog };
