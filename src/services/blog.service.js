@@ -1,6 +1,5 @@
 import Blog from "../models/blogs.model.js";
 
-
 const createBlog = async (userId, data) => {
   try {
     const newBlog = await new Blog({ ...data, user: userId }).populate(
@@ -17,4 +16,18 @@ const createBlog = async (userId, data) => {
   }
 };
 
-export { createBlog};
+const updateBlog = async (blogId, authorId, data) => {
+  const blogExits = await Blog.findById(blogId);
+  if (!blogExits) {
+    throw new Error("Blog not found");
+  }
+  const blog = await Blog.findOneAndUpdate(
+    { _id: blogId, author: authorId },
+    { $set: data },
+    { new: true },
+  ).populate("author");
+  if (!blog) throw new Error("Not Authorized to update blog");
+  return blog;
+};
+
+export { createBlog, updateBlog };

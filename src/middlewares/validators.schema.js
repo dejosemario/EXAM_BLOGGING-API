@@ -15,6 +15,14 @@ const loginSchema = Joi.object({
 
 // BLOG SCHEMAS
 
+const paramIdSchema = Joi.object({
+    id: Joi.string().length(24).hex().required().messages({
+      'string.base': 'The id must be a string',
+      'string.length': 'The id must be exactly 24 characters long.',
+      'string.hex': 'The id must contain only hexadecimal characters (0-9 and a-f)',
+    }),
+  });
+
 const createBlogSchema = Joi.object({
   title: Joi.string().min(4).required(),
   description: Joi.string().min(4),
@@ -45,6 +53,7 @@ const queryParamSchema = Joi.object({
 export {
   signupSchema,
   loginSchema,
+  paramIdSchema,
   createBlogSchema,
   updateBlogSchema,
   queryParamSchema,

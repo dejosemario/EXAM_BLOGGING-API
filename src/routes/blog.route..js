@@ -9,7 +9,7 @@ blogRoute.get('/', wrapper(blogController.getAllBlogs));
 blogRoute.get('/:id', wrapper(blogController.getBlog));
 blogRoute.post('/', isAuthenticated, wrapper(blogController.createBlog));
 blogRoute.patch('/:id', isAuthenticated, wrapper(blogController.updateBlog));
-blogRoute.patch('/:id/publish',isAuthenticated, wrapper(blogController.deleteBlog));
+blogRoute.patch('/:id/publish',isAuthenticated, wrapper(blogController.publishBlog));
 blogRoute.delete('/:id', isAuthenticated, wrapper(blogController.deleteBlog));
 
 export default blogRoute;
