@@ -32,12 +32,25 @@ const updateBlog = async (req, res) => {
 };
 
 const deleteBlog = async (req, res) => {
-    const { id } = validate(paramIdSchema, req.params);
-    const data = await blogService.deleteBlog(id, req.user.id);
-    if (data) {
-      return res.status(204).json({});
-    }
-  };
-  
+  const { id } = validate(paramIdSchema, req.params);
+  const data = await blogService.deleteBlog(id, req.user.id);
+  if (data) {
+    return res.status(204).json({});
+  }
+};
 
-export { createBlog, updateBlog, deleteBlog };
+const publishBlog = async (req, res) => {
+  const { id } = validate(paramIdSchema, req.params);
+  const blog = await blogService.publishBlog(id, req.user.id);
+  if (data) {
+    return res
+      .status(200)
+      .json({
+        success: true,
+        message: " Blog published successfully",
+        data: blog,
+      });
+  }
+};
+
+export { createBlog, updateBlog, deleteBlog, publishBlog };
