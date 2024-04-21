@@ -36,4 +36,5 @@ const login = async (email, password) => {
 
   return { user, token };
 };
+
 export { createUser, login };
