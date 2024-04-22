@@ -1,5 +1,6 @@
-import winston from 'winston';
-import { printf, combine, timestamp, errors, json } from 'winston-format-colorize';
+import winston from "winston";
+
+const { printf, combine, timestamp, errors, json } = winston.format;
 
 const logFormat = printf(
   ({
@@ -27,11 +28,11 @@ const logFormat = printf(
 );
 
 const logger = winston.createLogger({
-  level: 'info',
+  level: "info",
   format: combine(
     // label({ label: 'HTTP' }),
     errors({ stack: true }),
-    timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+    timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
     json(),
     logFormat
     // align()
@@ -39,16 +40,14 @@ const logger = winston.createLogger({
   transports: [
     // new winston.transports.Console(),
     new winston.transports.File({
-      filename: 'logs/errors.log',
-      level: 'error',
+      filename: "logs/errors.log",
+      level: "error",
     }),
     new winston.transports.File({
-      filename: 'logs/combined.log',
-      level: 'info',
+      filename: "logs/combined.log",
+      level: "info",
     }),
   ],
 });
 
-
 export default logger;
-

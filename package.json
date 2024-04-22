@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "type": "module",  
+  "type": "module",
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mongodb-memory-server": "^9.1.8",
+    "mongodb-memory-server": "^9.2.0",
     "mongoose": "^8.3.2",
     "nodemon": "^3.1.0",
     "supertest": "^6.3.4"

@@ -1,4 +1,4 @@
-import logger from "./middlewareLogger.js";
+import logger from "../config/Logger.js"
 
 const errorHandler = (err, req, res, next) => {
   const status = err.status || 500;
