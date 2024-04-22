@@ -47,5 +47,20 @@ const blogSchema = new mongoose.Schema(
   }
 );
 
+
+// calculate reading time before saving document
+blogSchema.pre('save', function (next) {
+	let blog = this
+  
+	// do nothing if the article body is unchanged
+	if (!blog.isModified('body')) return next()
+  
+	// calculate the time in minutes
+	const timeToRead = readingTime(this.body)
+  
+	blog.reading_time = timeToRead
+	next()
+  })
+
 const Blog = mongoose.model("Blog", blogSchema);
 export default Blog;

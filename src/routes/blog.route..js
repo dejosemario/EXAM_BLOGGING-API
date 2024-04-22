@@ -5,7 +5,7 @@ import { isAuthenticated } from "../middlewares/auth.js";
 
 const blogRoute = Router();
 
-blogRoute.get('/', wrapper(blogController.getAllBlogs));
+blogRoute.get('/', wrapper(blogController.getPubishedBlogs));
 blogRoute.get('/:id', wrapper(blogController.getBlog));
 blogRoute.post('/', isAuthenticated, wrapper(blogController.createBlog));
 blogRoute.patch('/:id', isAuthenticated, wrapper(blogController.updateBlog));

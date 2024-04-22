@@ -4,7 +4,7 @@ const errorHandler = (err, req, res, next) => {
   const message = err.message || "Something went wrong";  
 
   const cleanedMessage = message.replace(/"/g, "");
-  res.status(status).json({ success, messageee: cleanedMessage });
+  res.status(status).json({ success, message: cleanedMessage });
 };
 
 export { errorHandler };

@@ -13,7 +13,7 @@ const comparePassword = async (password, hashedPassword) => {
 
 //This function is used to generate token
 const generateToken = (payload) => {
-  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1h" });
+  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1hr" });
 };
 
 // This function is a wrapper for async functions to catch errors and pass them to the error handling middleware.

@@ -10,7 +10,6 @@ const createUser = async (data) => {
   if (user) {
     throw new Error("User already exist");
   }
-  console.log(user);
   const hashedPassword = await hashPassword(data.password);
   const newUser = new User({ ...data, password: hashedPassword });
   await newUser.save();
@@ -31,10 +30,9 @@ const login = async (email, password) => {
   const token = generateToken({
     id: user._id,
     first_name: user.first_name,
-    email: user.email,
   });
 
-  return { user, token };
+  return { user: user.toJSON(), token };
 };
 
 export { createUser, login };

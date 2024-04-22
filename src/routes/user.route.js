@@ -7,4 +7,3 @@ const userRoute = Router();
 
 userRoute.get("/me/blogs", isAuthenticated, wrapper(blogController.getAllBlogs));
 
-export default userRoute;
