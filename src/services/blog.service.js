@@ -25,7 +25,7 @@ const getAllBlogsService = async ({
   authorId,
 }) => {
   const query = { author: authorId };
-  const skipg = (page - 1) * limit;
+  const skip = (page - 1) * limit;
 
   if (state) query.state = state;
   const blogs = await Blog.find(query)
@@ -34,6 +34,46 @@ const getAllBlogsService = async ({
     .skip(skip)
     .limit(limit);
 
+  const allCount = await Blog.countDocuments(query);
+  return { blogs, allCount };
+};
+
+const getAllPublishedBlogsService = async (
+  page,
+  limit,
+  order,
+  order_by,
+  searchParams
+) => {
+  const query = { state: "published" };
+  const skip = (page - 1) * limit;
+
+  //using the regex to match the search parameters
+  if (searchParams) {
+    const { author, title, tags } = searchParams;
+    if (author) {
+      const authorIds = await User.find({
+        $or: [
+          { first_name: { $regex: new RegExp(author, "i") } },
+          { last_name: { $regex: new RegExp(author, "i") } },
+        ],
+      }).select("_id");
+      query.author = { $in: authorIds.map((author) => author._id) };
+
+      if (title) {
+        query.title = { $regex: new RegExp(title, "i") };
+      }
+      if (tags) {
+        query.tags = { $in: new RegExp(tags, "i") };
+      }
+    }
+  }
+
+  const blogs = await Blog.find(query)
+    .populate("author")
+    .skip(skip)
+    .limit(limit)
+    .sort([[order_by, order]]);
   const allCount = await Blog.countDocuments(query);
   return { blogs, allCount };
 };

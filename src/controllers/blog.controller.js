@@ -68,6 +68,39 @@ const getAllBlogs = async (req, res) => {
     success: true,
     message: totalPages ? "Successfully retrieved all blogs" : "No blogs found",
     data: { blogs, allCount, totalPages },
+    metaData,
+  });
+};
+
+const getAllPublishedBlogs = async (req, res) => {
+  const values = validate(queryParamSchema, req.query);
+  const { order, order_by, page, limit } = values;
+
+  const { searchParams } = req.query;
+
+  const { blogs, allCount } = await getAllPublishedBlogsService({
+    order,
+    order_by,
+    page,
+    limit,
+    searchParams,
+  });
+
+  const totalPages = Math.ceil(data.allCount / limit);
+
+  const metaData = {
+    page: page,
+    limit: limit,
+    allCount: allCount,
+    hasPrevious: page > 1,
+    hasNext: page < totalPages,
+  };
+
+  return res.status(200).json({
+    success: true,
+    message: totalPages ? "Successfully retrieved all blogs" : "No blogs found",
+    data: { blogs, allCount, totalPages },
+    metaData,
   });
 };
 
@@ -92,13 +125,11 @@ const publishBlog = async (req, res) => {
   const { id } = validate(paramIdSchema, req.params);
   const blog = await publishBlogService(id, req.user.id);
   if (data) {
-    return res
-      .status(200)
-      .json({
-        success: true,
-        message: " Blog published successfully",
-        data: blog,
-      });
+    return res.status(200).json({
+      success: true,
+      message: " Blog published successfully",
+      data: blog,
+    });
   }
 };
 
@@ -110,4 +141,12 @@ const deleteBlog = async (req, res) => {
   }
 };
 
-export { createBlog, updateBlog, deleteBlog, publishBlog, getBlog };
+export {
+  createBlog,
+  updateBlog,
+  deleteBlog,
+  publishBlog,
+  getBlog,
+  getAllBlogs,
+  getAllPublishedBlogs,
+};
