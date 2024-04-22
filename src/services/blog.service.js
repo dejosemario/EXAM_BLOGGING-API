@@ -11,7 +11,7 @@ const createBlogService = async (userId, data) => {
     if (error.code === 11000) {
       throw new Error("Blog already exist");
     } else {
-      throw new Error("Internal server error");
+      throw new Error(error.message);
     }
   }
 };
@@ -48,23 +48,24 @@ const getAllPublishedBlogsService = async (
   const query = { state: "published" };
   const skip = (page - 1) * limit;
 
+  console.log(order_by, "I am searchParams");
+
   //using the regex to match the search parameters
   if (searchParams) {
-    const { author, title, tags } = searchParams;
-    if (author) {
+    if (searchParams.author) {
       const authorIds = await User.find({
         $or: [
-          { first_name: { $regex: new RegExp(author, "i") } },
-          { last_name: { $regex: new RegExp(author, "i") } },
+          { first_name: { $regex: new RegExp(searchParams.author, "i") } },
+          { last_name: { $regex: new RegExp(searchParams.author, "i") } },
         ],
       }).select("_id");
       query.author = { $in: authorIds.map((author) => author._id) };
 
-      if (title) {
-        query.title = { $regex: new RegExp(title, "i") };
+      if (searchParams.title) {
+        query.title = { $regex: new RegExp(searchParams.title, "i") };
       }
-      if (tags) {
-        query.tags = { $in: new RegExp(tags, "i") };
+      if (searchParams.tags) {
+        query.tags = { $in: new RegExp(searchParams.tags, "i") };
       }
     }
   }
@@ -80,7 +81,7 @@ const getAllPublishedBlogsService = async (
 
 const getBlogByIdService = async (id) => {
   const blog = await Blog.findOneAndUpdate(
-    { _id: id, $state: "published" },
+    { _id: id, state: "published" },
     { $inc: { read_count: 1 } },
     { new: true }
   ).populate("author");
@@ -99,10 +100,11 @@ const updateBlogService = async ({ id, userId, data }) => {
     { _id: id, author: userId },
     { $set: data },
     { new: true }
-  ).populate("author");
+  ).populate("author"); 
 
-  return blog;
+  if (!blog) throw new Unauthorized('You are not authorized to update this blog');  return blog;
 };
+
 
 const publishBlogService = async (blogId, authorId) => {
   const blogExists = await Blog.findById(blogId);
@@ -138,4 +140,5 @@ export {
   publishBlogService,
   getBlogByIdService,
   getAllBlogsService,
+  getAllPublishedBlogsService,
 };

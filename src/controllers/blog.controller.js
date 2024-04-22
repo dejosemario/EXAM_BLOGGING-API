@@ -4,6 +4,7 @@ import {
   deleteBlogService,
   publishBlogService,
   getBlogByIdService,
+  getAllPublishedBlogsService,
 } from "../services/blog.service.js";
 import {
   updateBlogSchema,
@@ -27,6 +28,7 @@ const createBlog = async (req, res) => {
 
 const getBlog = async (req, res) => {
   const { id } = validate(paramIdSchema, req.params);
+  console.log(id, "I am id");
 
   const data = await getBlogByIdService(id);
   if (data) {
@@ -74,19 +76,21 @@ const getAllBlogs = async (req, res) => {
 
 const getAllPublishedBlogs = async (req, res) => {
   const values = validate(queryParamSchema, req.query);
-  const { order, order_by, page, limit } = values;
+  console.log(values, "I am values");
+  const { page, limit, order, order_by } = values;
 
-  const { searchParams } = req.query;
+  const { author, title, tags } = req.query;
+  const searchParams = { author, title, tags };
 
-  const { blogs, allCount } = await getAllPublishedBlogsService({
-    order,
-    order_by,
+  const { blogs, allCount } = await getAllPublishedBlogsService(
     page,
     limit,
+    order,
+    order_by,
     searchParams,
-  });
+  );
 
-  const totalPages = Math.ceil(data.allCount / limit);
+  const totalPages = Math.ceil(allCount / limit);
 
   const metaData = {
     page: page,
@@ -124,7 +128,7 @@ const updateBlog = async (req, res) => {
 const publishBlog = async (req, res) => {
   const { id } = validate(paramIdSchema, req.params);
   const blog = await publishBlogService(id, req.user.id);
-  if (data) {
+  if (blog) {
     return res.status(200).json({
       success: true,
       message: " Blog published successfully",

@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+import { getReadingTime } from "../utils/index.js";
+
 
 const blogSchema = new mongoose.Schema(
   {
@@ -6,11 +8,9 @@ const blogSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
-      trim: true,
     },
     description: {
       type: String,
-      trim: true,
     },
     body: {
       type: String,
@@ -49,18 +49,16 @@ const blogSchema = new mongoose.Schema(
 
 
 // calculate reading time before saving document
-blogSchema.pre('save', function (next) {
-	let blog = this
-  
-	// do nothing if the article body is unchanged
-	if (!blog.isModified('body')) return next()
-  
-	// calculate the time in minutes
-	const timeToRead = readingTime(this.body)
-  
-	blog.reading_time = timeToRead
-	next()
-  })
+blogSchema.pre(/^(updateOne|save|findOneAndUpdate)/, function (next) {
+  if (this.body) {
+    this.reading_time = getReadingTime(this.body);
+  }
+  next();
+});
+
+
+//  Text index setup to optimize search
+blogSchema.index({ title: 'text', description: 'text', tags: 'text' });
 
 const Blog = mongoose.model("Blog", blogSchema);
 export default Blog;

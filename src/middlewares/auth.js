@@ -7,8 +7,7 @@ export const isAuthenticated = (req, res, next) => {
     const token = authorization.split(" ")[1];
     const decode = verifyToken(token);
     if (!req.user) req.user = {}; //set a user object to empty object if it doesn't exist
-    console.log(decode, " I am decode");
-    req.user = decode;
+    req.user.id = decode.id;
     next();
   } catch (error) {
     return res

@@ -39,6 +39,14 @@ const validate = (schema, data) => {
   }
 };
 
+// Function that calculate the average reading time for a blog post
+const getReadingTime = (blogContent) => {
+  const totalWords = blogContent.split(' ').length;
+  // Assume that it takes 1 minute to read 40 words
+  return Math.ceil(totalWords / 40);
+};
+
+
 //check
 const verifyToken = (token) => {
   try {
@@ -48,4 +56,4 @@ const verifyToken = (token) => {
   }
 };
 
-export { wrapper, validate, verifyToken, hashPassword, comparePassword, generateToken};
+export { wrapper, validate, verifyToken, hashPassword, comparePassword, generateToken, getReadingTime};
