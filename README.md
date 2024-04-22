@@ -24,3 +24,50 @@ Welcome to the Blogging API project! This backend platform empowers users to cre
 - **Render**: Hosting and deployment platform for seamless application deployment.
 
 !["ERD diagram showing relationships between models."](ERD.png?raw=true)
+
+## Installation Instructions
+
+Guidelines on how to get a development environment running:
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/dejosemario/EXAM_BLOGGING-API.git
+cd EXAM_BLOGGING-API
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Set up environment variables**
+   Create a `.env` file in the root directory and fill it with the necessary environment variables:
+
+```bash
+DB_URI=mongodb://localhost:27017/blogging
+JWT_SECRET=your_jwt_secret
+PORT=8000
+```
+
+4. **Run the server**
+
+```bash
+npm start
+```
+
+## API Endpoints
+
+| Methods | Endpoint                 | Protected | Description                                     |
+| ------- | ------------------------ | --------- | ----------------------------------------------- |
+| POST    | `/api/auth/register`     | No        | Registers a new                                 |
+| POST    | `/api/auth/login`        | No        | Logs in a user                                  |
+| GET     | `/api/blogs/:id`         | No        | Retrieves a specific blog                       |
+| GET     | `/api/blogs`             | No        | Retrieves all published blogs                   |
+| POST    | `/api/blogs`             | Yes       | Create a new blog                               |
+| PATCH   | `/api/blogs/:id`         | Yes       | Edit a specific blog                            |
+| PATCH   | `/api/blogs/:id/publish` | Yes       | Publish a specific blog                         |
+| DELETE  | `/api/blogs/:id`         | Yes       | Deletes a specific blog                         |
+| GET     | `/api/users/me/blogs`    | Yes       | Retrieves all blogs from the authenticated user |
+

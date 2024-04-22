@@ -3,7 +3,7 @@ import authRoute from "./routes/auth.route.js";
 import blogRoute from "./routes/blog.route..js";
 import userRoute from "./routes/user.route.js";
 import { errorHandler } from "./middlewares/error.js";
-import logger from "./middlewares/middlewareLogger.js";
+import logger from "./config/Logger.js";
 import middlewareLogger from "./middlewares/middlewareLogger.js";
 
 // Create a new express application
