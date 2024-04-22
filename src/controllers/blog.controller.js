@@ -28,7 +28,6 @@ const createBlog = async (req, res) => {
 
 const getBlog = async (req, res) => {
   const { id } = validate(paramIdSchema, req.params);
-  console.log(id, "I am id");
 
   const data = await getBlogByIdService(id);
   if (data) {
@@ -76,7 +75,6 @@ const getAllBlogs = async (req, res) => {
 
 const getAllPublishedBlogs = async (req, res) => {
   const values = validate(queryParamSchema, req.query);
-  console.log(values, "I am values");
   const { page, limit, order, order_by } = values;
 
   const { author, title, tags } = req.query;

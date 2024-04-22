@@ -48,7 +48,6 @@ const getAllPublishedBlogsService = async (
   const query = { state: "published" };
   const skip = (page - 1) * limit;
 
-  console.log(order_by, "I am searchParams");
 
   //using the regex to match the search parameters
   if (searchParams) {
