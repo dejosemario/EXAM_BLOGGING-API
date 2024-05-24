@@ -14,3 +14,4 @@ blogRoute.delete('/:id', isAuthenticated, wrapper(blogController.deleteBlog));
 
 export default blogRoute;
 
+ 
