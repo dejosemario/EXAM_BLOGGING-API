@@ -1,4 +1,6 @@
+import"express-async-errors";
 import express from "express";
+
 import authRoute from "./routes/auth.route.js";
 import blogRoute from "./routes/blog.route..js";
 import userRoute from "./routes/user.route.js";
@@ -20,7 +22,6 @@ app.use('/api/users', userRoute);
 
 
 // Error handling middleware
-app.use(errorHandler);
 app.all("*", (req, res) => {
   logger.error('Error', {
     method: req.method,
@@ -34,5 +35,7 @@ app.all("*", (req, res) => {
     message: `Can't find ${req.originalUrl} on this server!`,
   });
 });
+
+app.use(errorHandler);
 
 export default app;

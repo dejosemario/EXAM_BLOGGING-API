@@ -1,5 +1,10 @@
+[2024-04-22 23:07:33] [info] POST /api/auth/login 500 ::1 Guest {}
+[2024-04-22 23:11:51] [info] POST /api/auth/login 500 ::1 Guest {}
+[2024-04-22 23:11:52] [info] POST /api/auth/login 500 ::1 Guest {}
 [2024-04-22 23:14:29] [error] POST /api/auth/login undefined ::1 Guest "Error: User not found\n    at Module.login (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/services/auth.service.js:22:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async login (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/controllers/auth.controller.js:18:20)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/utils/index.js:23:7"{}
+[2024-04-22 23:14:29] [info] POST /api/auth/login 500 ::1 Guest {}
 [2024-04-22 23:15:15] [error] POST /api/auth/login undefined ::1 Guest "Error: User not found\n    at Module.login (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/services/auth.service.js:22:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async login (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/controllers/auth.controller.js:18:20)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/utils/index.js:23:7"{}
+[2024-04-22 23:15:15] [info] POST /api/auth/login 500 ::1 Guest {}
 [2024-04-23 23:05:16] [error] GET /api/ function status(code) {
   if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
     deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
@@ -7,10 +12,23 @@
   this.statusCode = code;
   return this;
 } ::1 Guest {}
+[2024-04-23 23:05:16] [info] GET /api/ 404 ::1 Guest {}
+[2024-04-23 23:05:32] [info] POST /api/blogs 401 ::1 Guest {}
+[2024-04-23 23:06:59] [info] POST /api/blogs 401 ::1 Guest {}
+[2024-04-23 23:07:02] [info] POST /api/blogs 401 ::1 Guest {}
 [2024-04-23 23:10:06] [error] POST /api/blogs undefined ::1 Guest "Error: No authorization header found\n    at isAuthenticated (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/middlewares/auth.js:5:29)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\index.js:47:12)"{}
+[2024-04-23 23:10:06] [info] POST /api/blogs 500 ::1 Guest {}
 [2024-04-23 23:10:37] [error] POST /api/blogs undefined ::1 Guest "Error: No authorization header found\n    at isAuthenticated (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/middlewares/auth.js:5:29)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\node_modules\\express\\lib\\router\\index.js:47:12)"{}
+[2024-04-23 23:10:37] [info] POST /api/blogs 500 ::1 Guest {}
 [2024-04-23 23:11:10] [error] POST /api/auth/login undefined ::1 Guest "Error: User not found\n    at Module.login (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/services/auth.service.js:22:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async login (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/controllers/auth.controller.js:18:20)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/utils/index.js:23:7"{}
+[2024-04-23 23:11:10] [info] POST /api/auth/login 500 ::1 Guest {}
 [2024-04-23 23:12:11] [error] POST /api/auth/login undefined ::1 Guest "Error: Invalid credentials\n    at Module.login (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/services/auth.service.js:26:11)\n    at async login (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/controllers/auth.controller.js:18:20)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/utils/index.js:23:7"{}
+[2024-04-23 23:12:11] [info] POST /api/auth/login 500 ::1 Guest {}
+[2024-04-23 23:12:24] [info] POST /api/auth/login 200 ::1 Guest {}
+[2024-04-23 23:12:56] [info] POST /api/blogs 201 ::1 662688073fdbda6d746383d7 {}
+[2024-04-23 23:18:17] [info] PATCH /api/blogs/66283268ff860f9d22f2dc64/publish 200 ::1 662688073fdbda6d746383d7 {}
+[2024-04-23 23:18:36] [info] GET /api/blogs/ 200 ::1 Guest {}
+[2024-04-23 23:18:55] [info] GET /api/blogs/ 200 ::ffff:127.0.0.1 Guest {}
 [2024-04-23 23:18:55] [error] GET /favicon.ico function status(code) {
   if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
     deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
@@ -18,6 +36,8 @@
   this.statusCode = code;
   return this;
 } ::ffff:127.0.0.1 Guest {}
+[2024-04-23 23:18:55] [info] GET /favicon.ico 404 ::ffff:127.0.0.1 Guest {}
+[2024-04-24 10:56:27] [info] POST /api/auth/login 200 ::1 Guest {}
 [2024-04-24 10:57:29] [error] PATCH /api/blogs/ function status(code) {
   if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
     deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
@@ -25,6 +45,7 @@
   this.statusCode = code;
   return this;
 } ::1 Guest {}
+[2024-04-24 10:57:29] [info] PATCH /api/blogs/ 404 ::1 Guest {}
 [2024-04-24 10:59:33] [error] POST /api/blogs/662688073fdbda6d746383d7 function status(code) {
   if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
     deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
@@ -32,6 +53,61 @@
   this.statusCode = code;
   return this;
 } ::1 Guest {}
+[2024-04-24 10:59:33] [info] POST /api/blogs/662688073fdbda6d746383d7 404 ::1 Guest {}
+[2024-04-24 11:00:12] [info] POST /api/blogs/ 201 ::1 662688073fdbda6d746383d7 {}
 [2024-04-24 11:00:26] [error] PATCH /api/blogs/662688073fdbda6d746383d7/publish undefined ::1 662688073fdbda6d746383d7 "Error: Blog not found\n    at publishBlogService (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/services/blog.service.js:110:26)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async publishBlog (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/controllers/blog.controller.js:128:16)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/utils/index.js:23:7"{}
+[2024-04-24 11:00:26] [info] PATCH /api/blogs/662688073fdbda6d746383d7/publish 500 ::1 662688073fdbda6d746383d7 {}
+[2024-04-24 23:00:25] [info] POST /api/auth/login 200 ::1 Guest {}
+[2024-04-24 23:00:40] [info] PATCH /api/blogs/662688073fdbda6d746383d7/publish 401 ::1 Guest {}
 [2024-04-24 23:01:12] [error] PATCH /api/blogs/662688073fdbda6d746383d7/publish undefined ::1 662688073fdbda6d746383d7 "Error: Blog not found\n    at publishBlogService (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/services/blog.service.js:110:26)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async publishBlog (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/controllers/blog.controller.js:128:16)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/utils/index.js:23:7"{}
+[2024-04-24 23:01:12] [info] PATCH /api/blogs/662688073fdbda6d746383d7/publish 500 ::1 662688073fdbda6d746383d7 {}
+[2024-04-24 23:02:42] [info] PATCH /api/blogs/6628d82cd6ade7a62df8bbd2/publish 200 ::1 662688073fdbda6d746383d7 {}
+[2024-04-24 23:03:33] [info] PATCH /api/blogs/6628d82cd6ade7a62df8bbd2 200 ::1 662688073fdbda6d746383d7 {}
+[2024-04-24 23:05:04] [info] PATCH /api/blogs/6628d82cd6ade7a62df8bbd2 200 ::1 662688073fdbda6d746383d7 {}
+[2024-04-24 23:05:31] [info] POST /api/blogs/ 201 ::1 662688073fdbda6d746383d7 {}
+[2024-04-24 23:05:42] [info] POST /api/blogs/ 201 ::1 662688073fdbda6d746383d7 {}
+[2024-04-24 23:06:58] [info] POST /api/blogs/ 201 ::1 662688073fdbda6d746383d7 {}
+[2024-04-24 23:07:09] [info] POST /api/blogs/ 201 ::1 662688073fdbda6d746383d7 {}
 [2024-04-24 23:07:20] [error] POST /api/blogs/ undefined ::1 662688073fdbda6d746383d7 "Error: Blog already exist\n    at createBlogService (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/services/blog.service.js:12:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async createBlog (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/controllers/blog.controller.js:19:16)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/src/utils/index.js:23:7"{}
+[2024-04-24 23:07:20] [info] POST /api/blogs/ 500 ::1 662688073fdbda6d746383d7 {}
+[2024-04-24 23:07:32] [info] POST /api/blogs/ 201 ::1 662688073fdbda6d746383d7 {}
+[2024-04-24 23:07:42] [info] POST /api/blogs/ 201 ::1 662688073fdbda6d746383d7 {}
+[2024-04-24 23:08:13] [info] PATCH /api/blogs/662982aed6ade7a62df8bbf3/publish 200 ::1 662688073fdbda6d746383d7 {}
+[2024-05-25 13:35:36] [error] GET / function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::1 Guest {}
+[2024-05-25 13:35:36] [info] GET / 404 ::1 Guest {}
+[2024-05-25 13:35:36] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::1 Guest {}
+[2024-05-25 13:35:36] [info] GET /favicon.ico 404 ::1 Guest {}
+[2024-05-25 13:35:46] [error] GET /posts function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::1 Guest {}
+[2024-05-25 13:35:46] [info] GET /posts 404 ::1 Guest {}
+[2024-05-25 13:36:09] [error] GET /posts function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::1 Guest {}
+[2024-05-25 13:36:09] [info] GET /posts 404 ::1 Guest {}
+[2024-05-25 13:37:56] [info] GET /api/blogs/posts 200 ::1 Guest {}
+[2024-05-25 13:38:08] [info] GET /api/blogs/posts?limit=10 200 ::1 Guest {}
+[2024-05-25 13:38:08] [info] GET /api/blogs/posts?limit=10 200 ::1 Guest {}
+[2024-05-25 14:19:17] [info] GET /api/blogs/posts?limit=10 200 ::1 Guest {}
+[2024-05-25 14:20:06] [info] GET /api/blogs/posts?limit=10 200 ::1 Guest {}
+[2024-05-25 14:23:18] [info] GET /api/blogs/posts?limit=10 200 ::1 Guest {}
