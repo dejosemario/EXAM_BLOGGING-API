@@ -1,11 +1,16 @@
 import app from "./app.js";
 import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
+import redis from "./config/redis.js";
+import { RedisFlushModes } from "redis";
 
 dotenv.config();
+redis.connect();
 
 const PORT = process.env.PORT || 5000;
 const MONGODB_URI = process.env.MONGODB_URI;
+
+
 
 connectDB(MONGODB_URI)
   .then(() => {

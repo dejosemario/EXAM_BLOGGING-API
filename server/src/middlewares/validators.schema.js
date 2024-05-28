@@ -48,6 +48,7 @@ const queryParamSchema = Joi.object({
   state: Joi.string().trim().optional(),
   title: Joi.string().trim().optional(),
   tags: Joi.string().trim().optional(),
+
 });
 
 export {
