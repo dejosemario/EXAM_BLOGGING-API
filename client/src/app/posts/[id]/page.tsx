@@ -1,7 +1,9 @@
 
 export default async function Page({ params }: { params: { id: string } }) {
+  console.log("emeka")
+  console.log(params.id, "I am the params")
    
-  const response = await fetch(`https://dummyjson.com/posts/${params.id}`);
+  const response = await fetch(`http://localhost:8000/api/blogs/posts/${params.id}`);
   const post = await response.json();
   return (
     <main className="px-7 pt-24 text-center">
