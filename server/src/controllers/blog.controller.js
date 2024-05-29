@@ -56,6 +56,7 @@ const getAllBlogs = async (req, res) => {
     authorId,
   });
   const totalPages = Math.ceil(data.allCount / limit);
+  console.log("I ma the blogs", blogs, allCount)
 
   const metaData = {
     page: page,
@@ -65,6 +66,8 @@ const getAllBlogs = async (req, res) => {
     hasNext: page < totalPages,
   };
 
+  const cacheKey = '/'
+ 
   return res.status(200).json({
     success: true,
     message: totalPages ? "Successfully retrieved all blogs" : "No blogs found",
@@ -97,6 +100,7 @@ const getAllPublishedBlogs = async (req, res) => {
     hasPrevious: page > 1,
     hasNext: page < totalPages,
   };
+  console.log("I ma the blogs", blogs, allCount)
 
   return res.status(200).json({
     success: true,

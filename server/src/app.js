@@ -21,6 +21,9 @@ app.use("/api/blogs", blogRoute);
 app.use('/api/users', userRoute);
 
 
+app.use(errorHandler);
+
+
 // Error handling middleware
 app.all("*", (req, res) => {
   logger.error('Error', {
@@ -36,6 +39,5 @@ app.all("*", (req, res) => {
   });
 });
 
-app.use(errorHandler);
 
 export default app;
