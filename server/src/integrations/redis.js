@@ -9,5 +9,9 @@ client.on('connect', ()=>{
     console.log('Redis Connected')
 })
 
+client.on('error', (err)=>{
+    console.log('Error', err)
+})
+
 
 export default client;

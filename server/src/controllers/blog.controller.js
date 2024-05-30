@@ -13,6 +13,7 @@ import {
   queryParamSchema,
 } from "../middlewares/validators.schema.js";
 import { validate } from "../utils/index.js";
+import redisClient from "../integrations/redis.js";
 
 const createBlog = async (req, res) => {
   validate(createBlogSchema, req.body);
@@ -56,7 +57,7 @@ const getAllBlogs = async (req, res) => {
     authorId,
   });
   const totalPages = Math.ceil(data.allCount / limit);
-  console.log("I ma the blogs", blogs, allCount)
+  // console.log("I ma the blogs", blogs, allCount)
 
   const metaData = {
     page: page,
@@ -66,8 +67,6 @@ const getAllBlogs = async (req, res) => {
     hasNext: page < totalPages,
   };
 
-  const cacheKey = '/'
- 
   return res.status(200).json({
     success: true,
     message: totalPages ? "Successfully retrieved all blogs" : "No blogs found",
@@ -77,11 +76,25 @@ const getAllBlogs = async (req, res) => {
 };
 
 const getAllPublishedBlogs = async (req, res) => {
-  const values = validate(queryParamSchema, req.query);
+  const values  = validate(queryParamSchema, req.query);
   const { page, limit, order, order_by } = values;
 
   const { author, title, tags } = req.query;
+
   const searchParams = { author, title, tags };
+
+  //check if the data is in cache
+  const cacheKey = `posts:${page}:${limit}:${order}:${order_by}:${author}:${title}:${tags}`;
+  const data = await redisClient.get(cacheKey);
+
+  if (data) {
+    console.log("returning data from cache");
+    const parsedData = JSON.parse(data);
+    return res.status(200).json({
+      data: parsedData,
+      error: null,
+    });
+  }
 
   const { blogs, allCount } = await getAllPublishedBlogsService(
     page,
@@ -90,6 +103,8 @@ const getAllPublishedBlogs = async (req, res) => {
     order_by,
     searchParams,
   );
+
+  await redisClient.setEx(cacheKey, 600, JSON.stringify(blogs));
 
   const totalPages = Math.ceil(allCount / limit);
 
@@ -100,7 +115,6 @@ const getAllPublishedBlogs = async (req, res) => {
     hasPrevious: page > 1,
     hasNext: page < totalPages,
   };
-  console.log("I ma the blogs", blogs, allCount)
 
   return res.status(200).json({
     success: true,

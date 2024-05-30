@@ -185,3 +185,380 @@
 } ::ffff:127.0.0.1 Guest {}
 [2024-05-29 14:20:02] [error] GET /api/blogs/posts/undefined 500 ::1 Guest "Error: The id must be exactly 24 characters long.\n    at validate (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:36:13)\n    at getBlog (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:30:18)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15"{}
 [2024-05-29 15:23:45] [error] POST /api/auth/signup 500 ::1 Guest "Error: \"first_name\" is required\n    at validate (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:36:13)\n    at signUp (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/auth.controller.js:6:3)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15"{}
+[2024-05-30 10:15:10] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:22:47] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:23:41] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:24:19] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::1 Guest {}
+[2024-05-30 10:24:36] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:25:15] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:27:00] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:27:24] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:27:47] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:28:50] [error] GET /api/blogs/posts/ 500 ::ffff:127.0.0.1 Guest "ReferenceError: author is not defined\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:88:26)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:346:12)"{}
+[2024-05-30 10:28:50] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:50:36] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:52:23] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:52:30] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:53:33] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 10:53:35] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:01:35] [error] GET /api/blogs/posts/ 500 ::ffff:127.0.0.1 Guest "ReferenceError: redisClient is not defined\n    at getAllPublishedBlogsService (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/services/blog.service.js:73:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:98:31)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:7"{}
+[2024-05-30 11:01:35] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:04:42] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:04:53] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:06:04] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:06:11] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:06:55] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:09:25] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:09:28] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:10:19] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:10:22] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:10:41] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:11:27] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:11:29] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:12:05] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::1 Guest {}
+[2024-05-30 11:53:23] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 11:54:26] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 12:23:24] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:06:26] [error] GET /api/blogs/posts?firstname=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "Error: \"firstname\" is not allowed\n    at validate (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:36:13)\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:79:18)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15"{}
+[2024-05-30 16:06:26] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:07:27] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "Error: \"name\" is not allowed\n    at validate (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:36:13)\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:79:18)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15"{}
+[2024-05-30 16:07:27] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:23:04] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: query is not defined\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:87:3)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:346:12)"{}
+[2024-05-30 16:23:04] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:24:08] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: author is not defined\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:84:26)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:346:12)"{}
+[2024-05-30 16:24:08] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:24:28] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: author is not defined\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:84:26)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:346:12)"{}
+[2024-05-30 16:24:28] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:25:08] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: query is not defined\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:87:3)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:346:12)"{}
+[2024-05-30 16:25:08] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:29:27] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: query is not defined\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:89:23)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:346:12)"{}
+[2024-05-30 16:29:27] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:29:30] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: query is not defined\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:89:23)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:346:12)"{}
+[2024-05-30 16:29:30] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:29:43] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: whereQuery is not defined\n    at getAllPublishedBlogsService (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/services/blog.service.js:72:33)\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:109:37)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:7"{}
+[2024-05-30 16:29:43] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::1 Guest {}
+[2024-05-30 16:29:54] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: whereQuery is not defined\n    at getAllPublishedBlogsService (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/services/blog.service.js:72:33)\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:109:37)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:7"{}
+[2024-05-30 16:29:54] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:30:47] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: whereQuery is not defined\n    at getAllPublishedBlogsService (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/services/blog.service.js:72:33)\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:110:37)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:7"{}
+[2024-05-30 16:30:47] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:31:39] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: whereQuery is not defined\n    at getAllPublishedBlogsService (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/services/blog.service.js:72:33)\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:110:37)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:7"{}
+[2024-05-30 16:31:39] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:40:33] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: name is not defined\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:116:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:7"{}
+[2024-05-30 16:40:33] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:42:01] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "ReferenceError: name is not defined\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:117:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:7"{}
+[2024-05-30 16:42:01] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:42:50] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::1 Guest "ReferenceError: name is not defined\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:117:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:7"{}
+[2024-05-30 16:42:50] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::1 Guest {}
+[2024-05-30 16:43:36] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::1 Guest "ReferenceError: whereQuery is not defined\n    at getAllPublishedBlogsService (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/services/blog.service.js:73:33)\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:111:37)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:7"{}
+[2024-05-30 16:43:36] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::1 Guest {}
+[2024-05-30 16:44:03] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
+[2024-05-30 16:47:14] [error] GET /api/blogs/posts?name=Emeka&email=emeka@example.com 500 ::ffff:127.0.0.1 Guest "Error: \"name\" is not allowed\n    at validate (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:36:13)\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:79:19)\n    at file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:13\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at newFn (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\josem\\Desktop\\EXAM_BLOGGING-API\\server\\node_modules\\express\\lib\\router\\index.js:284:15"{}
+[2024-05-30 16:47:15] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::1 Guest {}
+[2024-05-30 16:47:40] [error] GET /api/blogs/posts 500 ::ffff:127.0.0.1 Guest "ReferenceError: Cannot access 'blogs' before initialization\n    at getAllPublishedBlogs (file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/controllers/blog.controller.js:99:29)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/josem/Desktop/EXAM_BLOGGING-API/server/src/utils/index.js:23:7"{}
+[2024-05-30 16:47:40] [error] GET /favicon.ico function status(code) {
+  if ((typeof code === 'string' || Math.floor(code) !== code) && code > 99 && code < 1000) {
+    deprecate('res.status(' + JSON.stringify(code) + '): use res.status(' + Math.floor(code) + ') instead')
+  }
+  this.statusCode = code;
+  return this;
+} ::ffff:127.0.0.1 Guest {}
