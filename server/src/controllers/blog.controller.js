@@ -57,6 +57,19 @@ const getAllBlogs = async (req, res) => {
   const values = validate(queryParamSchema, req.query);
   const { order, order_by, page, limit } = values;
 
+  const cahceKey = `me/blogs:${page}:${limit}:${order}:${order_by}:${author}:${state}: ${tags}:${title}`;
+  const data = await redisClient.get(cacheKey);
+
+  if (data) {
+
+    const parsedData = JSON.parse(data);
+    return res.status(200).json({
+      data: parsedData,
+      error: null,
+    });
+  }
+
+
   const { state } = req.query; //check later
 
   // get the author id from the user object
@@ -70,6 +83,9 @@ const getAllBlogs = async (req, res) => {
     state,
     authorId,
   });
+
+  await redisClient.setEx(cacheKey, 600, JSON.stringify(blogs));
+
   const totalPages = Math.ceil(data.allCount / limit);
   // console.log("I ma the blogs", blogs, allCount)
 
