@@ -30,7 +30,21 @@ const createBlog = async (req, res) => {
 const getBlog = async (req, res) => {
   const { id } = validate(paramIdSchema, req.params);
 
+  //check if the data is in cache
+  const cacheKey = `post:${id}`;
+  const cacheData = await redisClient.get(cacheKey);
+
+  if (cacheData) {
+    const parsedData = JSON.parse(cacheData);
+    return res.status(200).json({
+      data: parsedData,
+      error: null,
+    });
+  }
+
   const data = await getBlogByIdService(id);
+  await redisClient.setEx(cacheKey, 600, JSON.stringify(data));
+
   if (data) {
     return res
       .status(200)
@@ -76,7 +90,7 @@ const getAllBlogs = async (req, res) => {
 };
 
 const getAllPublishedBlogs = async (req, res) => {
-  const values  = validate(queryParamSchema, req.query);
+  const values = validate(queryParamSchema, req.query);
   const { page, limit, order, order_by } = values;
 
   const { author, title, tags } = req.query;
@@ -101,7 +115,7 @@ const getAllPublishedBlogs = async (req, res) => {
     limit,
     order,
     order_by,
-    searchParams,
+    searchParams
   );
 
   await redisClient.setEx(cacheKey, 600, JSON.stringify(blogs));
